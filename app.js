@@ -11,14 +11,6 @@ require('./instantHello');
 
   goodbye();    // the Var saved that as a function
 
-// Creating Modules and Exports and using the require();
-// Rewuire a file "./"
-// .js not required
-// Index.js is not required.
-// Call methods - store that value
-
-
-
 
 var answer = question.ask("What is the meaning of life ?");
 console.log(answer);
