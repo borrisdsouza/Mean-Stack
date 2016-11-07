@@ -2,7 +2,7 @@
 require('./instantHello');
   var goodbye = require('./talk/goodBye');  // ./  Look in the same folder
   var talk =  require('./talk');           // This will look for file in same folder as app.js or talk.js
-                                           // if if dosent find that it will look for the folder
+                                            // if if dosent find that it will look for the folder
                                            // talk and inside that look for Index.js
   var question = require ('./talk/question');
    talk.intro();
