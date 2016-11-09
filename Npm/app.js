@@ -5,11 +5,12 @@ var path = require("path");
 
 app.set('port', 3000);
 
-app.get('/',function (reg, res){
-    console.log("Get the home page");
-    res
-    .status(200)
-    .sendFile(path.join(__dirname,'public','index.html'));
+app.use(express.static(path.join(__dirname,'public')));
+
+app.use(function(req,res,next){
+  console.log(req.method , req.url);
+  
+  next();
 });
 
 app.get('/json',function (reg, res){
